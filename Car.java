@@ -1,5 +1,6 @@
 import java.util.Scanner;
-class Car extends Showroom{
+class Car extends Showroom implements utility
+{
     String car_name;
     String car_color;
     String car_fuel;
@@ -8,7 +9,8 @@ class Car extends Showroom{
     int car_mileage;
 
     @Override
-    public void getDetails() {
+    public void getDetails()
+    {
        System.out.println("CAR NAME: "+car_name); 
        System.out.println("CAR COLOR: "+car_color);
        System.out.println("Fuel Type: "+car_fuel);
@@ -17,7 +19,8 @@ class Car extends Showroom{
        System.out.println("Mileage: "+car_mileage);
     }
     @Override
-    public void setDetails() {
+    public void setDetails()
+    {
         Scanner sc = new Scanner(System.in);
         System.out.print("===================*** ENTER THE CAR DETAIL **=================");
         System.out.println();
